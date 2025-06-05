@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alianza de Federaciones, Asociaciones, Colegios Organismos y Barras de Abogados de México, A.C.</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #e2e8f0; /* Un azul claro muy sutil para el fondo */
+        }
+        .bg-primary {
+            background-color: #1a202c; /* Dark Blue Gray */
+        }
+        .text-primary {
+            color: #1a202c;
+        }
+        .bg-secondary {
+            background-color: #2c5282; /* Medium Blue */
+        }
+        .text-secondary {
+            color: #2c5282;
+        }
+        .bg-accent {
+            background-color: #ecc94b; /* Gold/Yellow */
+        }
+        .text-accent {
+            color: #ecc94b;
+        }
+        .border-accent {
+            border-color: #ecc94b;
+        }
+        .btn-primary {
+            @apply bg-secondary text-white px-8 py-4 rounded-xl shadow-lg hover:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105;
+        }
+        .social-icon {
+            @apply text-white hover:text-accent transition duration-300 ease-in-out transform hover:scale-110;
+        }
+        .card-hover-effect {
+            @apply transition duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-2xl hover:border-secondary;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header (Solo Logo y Titulo Principal) -->
+    <header class="bg-primary text-white shadow-lg">
+        <div class="container mx-auto px-6 py-5 flex flex-col md:flex-row justify-center items-center">
+            <!-- Logo y Nombre principal -->
+            <div class="flex items-center text-center md:text-left flex-col md:flex-row">
+                <!-- Enlace de la imagen del logo -->
+                <a href="#quienes-somos" class="block">
+                    <img src="https://raw.githubusercontent.com/Markotap5757/Alianza-Mexicana-de-Abogados-2/main/Logo%20Alianza.png" alt="Logo Alianza Mexicana de Abogados" class="rounded-full w-[120px] h-[120px] mr-0 md:mr-6 mb-2 md:mb-0 shadow-md object-cover">
+                </a>
+                <div>
+                    <h1 class="text-4xl sm:text-5xl font-bold text-accent drop-shadow-md leading-tight">Alianza Mexicana de Abogados</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección para el Nombre Completo y Navegación (Fuera del Header Azul Fuerte) -->
+    <section class="bg-white py-4 shadow-md">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <!-- Nombre completo de la organización -->
+            <h2 class="text-base sm:text-lg md:text-xl font-semibold text-primary text-center md:text-left mb-3 md:mb-0 max-w-full leading-relaxed">
+                Alianza de Federaciones, Asociaciones, Colegios Organismos y Barras de Abogados de México, A.C.
+            </h2>
+            <!-- Navegación -->
+            <nav class="mt-3 md:mt-0">
+                <ul class="flex flex-wrap justify-center md:space-x-8 space-x-4 text-lg md:text-xl">
+                    <li><a href="#quienes-somos" class="text-primary hover:text-secondary transition duration-300 ease-in-out">Quiénes Somos</a></li>
+                    <li><a href="#mision-vision" class="text-primary hover:text-secondary transition duration-300 ease-in-out">Misión y Valores</a></li>
+                    <li><a href="#niveles-abogacia" class="text-primary hover:text-secondary transition duration-300 ease-in-out">Niveles de Abogacía</a></li>
+                    <li><a href="#abogados" class="text-primary hover:text-secondary transition duration-300 ease-in-out">Abogados</a></li>
+                    <li><a href="#galeria" class="text-primary hover:text-secondary transition duration-300 ease-in-out">Galería</a></li>
+                    <li><a href="#eventos" class="text-primary hover:text-secondary transition duration-300 ease-in-out">Eventos</a></li>
+                    <li><a href="#contacto" class="text-primary hover:text-secondary transition duration-300 ease-in-out">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Hero Section con Eslogan -->
+    <section class="relative bg-cover bg-center h-[500px] flex items-center justify-center text-white p-6" style="background-image: url('https://placehold.co/1920x800/2c5282/ffffff?text=Justicia+y+Compromiso');">
+        <div class="absolute inset-0 bg-black opacity-60 rounded-b-xl"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h2 class="text-6xl font-extrabold mb-5 leading-tight drop-shadow-lg">"Defendiendo tus Derechos, Construyendo Justicia"</h2>
+            <p class="text-2xl font-light opacity-90">Alianza Mexicana de Abogados: Tu voz legal, tu fuerza en la justicia.</p>
+        </div>
+    </section>
+
+    <!-- Quiénes Somos -->
+    <section id="quienes-somos" class="container mx-auto px-6 py-20">
+        <h3 class="text-5xl font-bold text-primary text-center mb-12">Quiénes Somos</h3>
+        <div class="bg-white p-10 rounded-xl shadow-2xl max-w-4xl mx-auto border border-gray-200">
+            <p class="text-xl text-gray-700 leading-relaxed mb-6">
+                La Alianza Mexicana de Abogados es una organización líder en el ámbito jurídico de México,
+                conformada por profesionales del derecho altamente calificados y comprometidos con la excelencia
+                y la ética. Nuestra alianza se dedica a la defensa de los derechos, la promoción de la justicia
+                y el fortalecimiento del estado de derecho en el país.
+            </p>
+            <p class="text-xl text-gray-700 leading-relaxed">
+                Trabajamos de manera colaborativa, integrando diversas especialidades y experiencias para ofrecer
+                soluciones legales innovadoras y efectivas a nuestros clientes y a la sociedad en general.
+                Creemos firmemente en el poder del conocimiento y la unión para generar un impacto positivo
+                en el sistema legal mexicano.
+            </p>
+        </div>
+    </section>
+
+    <!-- Misión, Visión y Valores -->
+    <section id="mision-vision" class="bg-secondary text-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+                <!-- Misión -->
+                <div class="bg-white text-primary p-10 rounded-xl shadow-2xl card-hover-effect border border-gray-200">
+                    <h3 class="text-4xl font-bold mb-6 text-center text-secondary">Nuestra Misión</h3>
+                    <p class="text-xl leading-relaxed text-gray-700">
+                        Ser la voz y el brazo legal de la sociedad mexicana, defendiendo con pasión y rigor los derechos
+                        fundamentales, promoviendo la equidad y la justicia, y contribuyendo activamente al desarrollo
+                        de un marco legal sólido y transparente que beneficie a todos los ciudadanos. Nos comprometemos
+                        a ofrecer servicios legales de la más alta calidad, con un enfoque humano y ético.
+                    </p>
+                </div>
+                <!-- Visión -->
+                <div class="bg-white text-primary p-10 rounded-xl shadow-2xl card-hover-effect border border-gray-200">
+                    <h3 class="text-4xl font-bold mb-6 text-center text-secondary">Nuestra Visión</h3>
+                    <p class="text-xl leading-relaxed text-gray-700">
+                        Consolidarnos como la alianza de abogados más influyente y respetada en México y Latinoamérica,
+                        reconocida por nuestra excelencia profesional, nuestra capacidad de innovación y nuestro
+                        compromiso inquebrantable con la justicia social. Buscamos ser un referente en la formación
+                        de nuevas generaciones de juristas y en la adaptación del derecho a los desafíos del futuro.
+                    </p>
+                </div>
+            </div>
+            <!-- Valores -->
+            <div class="bg-white text-primary p-10 rounded-xl shadow-2xl max-w-4xl mx-auto border border-gray-200">
+                <h3 class="text-4xl font-bold mb-6 text-center text-secondary">Nuestros Valores</h3>
+                <ul class="list-disc list-inside text-xl leading-relaxed text-gray-700 space-y-3">
+                    <li><span class="font-semibold text-primary">Ética Profesional:</span> Actuar siempre con integridad, honestidad y transparencia, siendo un pilar de confianza para nuestros representados.</li>
+                    <li><span class="font-semibold text-primary">Compromiso Social:</span> Contribuir activamente al bienestar de la comunidad y la justicia para todos, buscando un impacto positivo duradero.</li>
+                    <li><span class="font-semibold text-primary">Excelencia:</span> Buscar la máxima calidad en todos nuestros servicios y actuaciones, superando constantemente las expectativas.</li>
+                    <li><span class="font-semibold text-primary">Innovación:</span> Adaptarnos y aplicar nuevas herramientas y enfoques jurídicos, manteniéndonos a la vanguardia del derecho.</li>
+                    <li><span class="font-semibold text-primary">Colaboración:</span> Fomentar el trabajo en equipo y el intercambio de conocimientos, creando sinergias para soluciones integrales.</li>
+                    <li><span class="font-semibold text-primary">Respeto:</span> Valorar la diversidad de opiniones y la dignidad de cada persona, promoviendo un ambiente de inclusión y equidad.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presidente de la Alianza -->
+    <section id="presidente" class="container mx-auto px-6 py-20">
+        <h3 class="text-5xl font-bold text-primary text-center mb-12">Nuestro Presidente</h3>
+        <div class="bg-white p-10 rounded-xl shadow-2xl max-w-3xl mx-auto flex flex-col md:flex-row items-center md:space-x-10 border border-gray-200">
+            <img src="https://placehold.co/220x220/ecc94b/1a202c?text=Lic.+Ricardo" alt="Lic. Ricardo Beltrán Verduzco" class="rounded-full w-56 h-56 mx-auto mb-8 md:mb-0 border-4 border-accent shadow-lg">
+            <div class="text-center md:text-left">
+                <h4 class="text-4xl font-bold text-primary mb-3">Lic. Ricardo Beltrán Verduzco</h4>
+                <p class="text-2xl text-gray-600 mb-5">Presidente de la Alianza de Federaciones, Asociaciones, Colegios Organismos y Barras de Abogados de México, A.C.</p>
+                <p class="text-xl text-gray-700 leading-relaxed">
+                    El Lic. Ricardo Beltrán Verduzco es un distinguido jurista con una trayectoria impecable
+                    en el ámbito del derecho. Su liderazgo y visión han sido fundamentales para el crecimiento
+                    y la consolidación de la Alianza Mexicana de Abogados, impulsando iniciativas que fortalecen
+                    la profesión y benefician a la sociedad. Su compromiso con la justicia y la ética son un
+                    ejemplo para todos los miembros de la alianza.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Niveles de Abogacía -->
+    <section id="niveles-abogacia" class="container mx-auto px-6 py-20 bg-gray-100 rounded-xl shadow-inner">
+        <h3 class="text-5xl font-bold text-primary text-center mb-12">Niveles de Abogacía</h3>
+        <div class="bg-white p-10 rounded-xl shadow-2xl max-w-5xl mx-auto border border-gray-200">
+            <p class="text-xl text-gray-700 text-center mb-10">
+                En la Alianza de Federaciones, Asociaciones, Colegios Organismos y Barras de Abogados de México, A.C., representamos y ofrecemos expertise en diversos niveles de la práctica legal,
+                desde el apoyo inicial hasta la litigación compleja y la asesoría estratégica.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Nivel 1: Asesoría Legal Básica -->
+                <a href="#" class="block p-8 bg-blue-50 rounded-xl shadow-md border border-blue-200 card-hover-effect">
+                    <h4 class="text-2xl font-bold text-secondary mb-3 text-center">Asesoría Legal Inicial</h4>
+                    <p class="text-lg text-gray-700 text-center">Orientación y consulta para casos sencillos y dudas generales.</p>
+                </a>
+                <!-- Nivel 2: Litigio y Representación -->
+                <a href="#" class="block p-8 bg-blue-50 rounded-xl shadow-md border border-blue-200 card-hover-effect">
+                    <h4 class="text-2xl font-bold text-secondary mb-3 text-center">Litigio y Representación</h4>
+                    <p class="text-lg text-gray-700 text-center">Defensa y representación en procesos judiciales y administrativos.</p>
+                </a>
+                <!-- Nivel 3: Asesoría Corporativa y Empresarial -->
+                <a href="#" class="block p-8 bg-blue-50 rounded-xl shadow-md border border-blue-200 card-hover-effect">
+                    <h4 class="text-2xl font-bold text-secondary mb-3 text-center">Derecho Corporativo y Empresarial</h4>
+                    <p class="text-lg text-gray-700 text-center">Asesoría especializada para empresas, contratos y regulaciones.</p>
+                </a>
+                <!-- Nivel 4: Mediación y Resolución Alternativa -->
+                <a href="#" class="block p-8 bg-blue-50 rounded-xl shadow-md border border-blue-200 card-hover-effect">
+                    <h4 class="text-2xl font-bold text-secondary mb-3 text-center">Mediación y Arbitraje</h4>
+                    <p class="text-lg text-gray-700 text-center">Solución de conflictos fuera de los tribunales.</p>
+                </a>
+                <!-- Nivel 5: Especialidades Avanzadas -->
+                <a href="#" class="block p-8 bg-blue-50 rounded-xl shadow-md border border-blue-200 card-hover-effect">
+                    <h4 class="text-2xl font-bold text-secondary mb-3 text-center">Especialidades Avanzadas</h4>
+                    <p class="text-lg text-gray-700 text-center">Derecho fiscal, propiedad intelectual, ambiental, etc.</p>
+                </a>
+                <!-- Nivel 6: Investigación y Doctrina -->
+                <a href="#" class="block p-8 bg-blue-50 rounded-xl shadow-md border border-blue-200 card-hover-effect">
+                    <h4 class="text-2xl font-bold text-secondary mb-3 text-center">Investigación y Doctrina</h4>
+                    <p class="text-lg text-gray-700 text-center">Contribución al desarrollo y análisis del derecho.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Abogados Integrantes -->
+    <section id="abogados" class="bg-gray-100 py-20">
+        <div class="container mx-auto px-6">
+            <h3 class="text-5xl font-bold text-primary text-center mb-12">Nuestros Abogados Integrantes</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+                <!-- Abogado 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-200 card-hover-effect">
+                    <img src="https://placehold.co/160x160/2c5282/ffffff?text=Abogado+1" alt="Abogado 1" class="rounded-full w-40 h-40 mx-auto mb-5 object-cover border-4 border-secondary shadow-md">
+                    <h4 class="text-2xl font-semibold text-primary mb-2">Lic. Ana Gómez</h4>
+                    <p class="text-lg text-gray-600">Especialidad: Derecho Civil</p>
+                </div>
+                <!-- Abogado 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-200 card-hover-effect">
+                    <img src="https://placehold.co/160x160/2c5282/ffffff?text=Abogado+2" alt="Abogado 2" class="rounded-full w-40 h-40 mx-auto mb-5 object-cover border-4 border-secondary shadow-md">
+                    <h4 class="text-2xl font-semibold text-primary mb-2">Lic. Juan Pérez</h4>
+                    <p class="text-lg text-gray-600">Especialidad: Derecho Penal</p>
+                </div>
+                <!-- Abogado 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-200 card-hover-effect">
+                    <img src="https://placehold.co/160x160/2c5282/ffffff?text=Abogado+3" alt="Abogado 3" class="rounded-full w-40 h-40 mx-auto mb-5 object-cover border-4 border-secondary shadow-md">
+                    <h4 class="text-2xl font-semibold text-primary mb-2">Lic. Sofía Ramírez</h4>
+                    <p class="text-lg text-gray-600">Especialidad: Derecho Corporativo</p>
+                </div>
+                <!-- Abogado 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-200 card-hover-effect">
+                    <img src="https://placehold.co/160x160/2c5282/ffffff?text=Abogado+4" alt="Abogado 4" class="rounded-full w-40 h-40 mx-auto mb-5 object-cover border-4 border-secondary shadow-md">
+                    <h4 class="text-2xl font-semibold text-primary mb-2">Lic. Carlos Morales</h4>
+                    <p class="text-lg text-gray-600">Especialidad: Derecho Laboral</p>
+                </div>
+                <!-- Abogado 5 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-200 card-hover-effect">
+                    <img src="https://placehold.co/160x160/2c5282/ffffff?text=Abogado+5" alt="Abogado 5" class="rounded-full w-40 h-40 mx-auto mb-5 object-cover border-4 border-secondary shadow-md">
+                    <h4 class="text-2xl font-semibold text-primary mb-2">Lic. Laura Torres</h4>
+                    <p class="text-lg text-gray-600">Especialidad: Derecho Familiar</p>
+                </div>
+                <!-- Abogado 6 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-200 card-hover-effect">
+                    <img src="https://placehold.co/160x160/2c5282/ffffff?text=Abogado+6" alt="Abogado 6" class="rounded-full w-40 h-40 mx-auto mb-5 object-cover border-4 border-secondary shadow-md">
+                    <h4 class="text-2xl font-semibold text-primary mb-2">Lic. Roberto Vargas</h4>
+                    <p class="text-lg text-gray-600">Especialidad: Derecho Administrativo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Fotografías y Videos -->
+    <section id="galeria" class="container mx-auto px-6 py-20">
+        <h3 class="text-5xl font-bold text-primary text-center mb-12">Galería de Medios</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Fotografías -->
+            <div class="bg-white p-10 rounded-xl shadow-2xl border border-gray-200">
+                <h4 class="text-3xl font-bold text-secondary mb-8 text-center">Nuestras Fotografías</h4>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+                    <img src="https://placehold.co/320x210/ecc94b/1a202c?text=Foto+1" alt="Foto 1" class="w-full h-auto rounded-lg shadow-md object-cover transition duration-300 ease-in-out transform hover:scale-105">
+                    <img src="https://placehold.co/320x210/ecc94b/1a202c?text=Foto+2" alt="Foto 2" class="w-full h-auto rounded-lg shadow-md object-cover transition duration-300 ease-in-out transform hover:scale-105">
+                    <img src="https://placehold.co/320x210/ecc94b/1a202c?text=Foto+3" alt="Foto 3" class="w-full h-auto rounded-lg shadow-md object-cover transition duration-300 ease-in-out transform hover:scale-105">
+                    <img src="https://placehold.co/320x210/ecc94b/1a202c?text=Foto+4" alt="Foto 4" class="w-full h-auto rounded-lg shadow-md object-cover transition duration-300 ease-in-out transform hover:scale-105">
+                    <img src="https://placehold.co/320x210/ecc94b/1a202c?text=Foto+5" alt="Foto 5" class="w-full h-auto rounded-lg shadow-md object-cover transition duration-300 ease-in-out transform hover:scale-105">
+                    <img src="https://placehold.co/320x210/ecc94b/1a202c?text=Foto+6" alt="Foto 6" class="w-full h-auto rounded-lg shadow-md object-cover transition duration-300 ease-in-out transform hover:scale-105">
+                </div>
+            </div>
+            <!-- Videos -->
+            <div class="bg-white p-10 rounded-xl shadow-2xl border border-gray-200">
+                <h4 class="text-3xl font-bold text-secondary mb-8 text-center">Nuestros Videos</h4>
+                <div class="space-y-6">
+                    <div class="aspect-video w-full rounded-xl overflow-hidden shadow-lg">
+                        <!-- Placeholder para video de YouTube -->
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="aspect-video w-full rounded-xl overflow-hidden shadow-lg">
+                        <!-- Otro placeholder para video -->
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/oHg5SJYRHA0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendario de Eventos -->
+    <section id="eventos" class="bg-gray-100 py-20">
+        <div class="container mx-auto px-6">
+            <h3 class="text-5xl font-bold text-primary text-center mb-12">Próximos Eventos</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Evento 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 card-hover-effect">
+                    <h4 class="text-2xl font-semibold text-secondary mb-3">Conferencia: El Futuro del Derecho en México</h4>
+                    <p class="text-lg text-gray-700 mb-2"><span class="font-bold">Fecha:</span> 15 de Julio, 2025</p>
+                    <p class="text-lg text-gray-700 mb-2"><span class="font-bold">Lugar:</span> Centro de Convenciones, CDMX</p>
+                    <p class="text-base text-gray-600">Una discusión profunda sobre las tendencias y desafíos del sistema legal.</p>
+                </div>
+                <!-- Evento 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 card-hover-effect">
+                    <h4 class="text-2xl font-semibold text-secondary mb-3">Taller de Actualización en Derecho Digital</h4>
+                    <p class="text-lg text-gray-700 mb-2"><span class="font-bold">Fecha:</span> 22 de Agosto, 2025</p>
+                    <p class="text-lg text-gray-700 mb-2"><span class="font-bold">Lugar:</span> Sede Virtual (Zoom)</p>
+                    <p class="text-base text-gray-600">Explorando las implicaciones legales de la tecnología y el internet.</p>
+                </div>
+                <!-- Evento 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 card-hover-effect">
+                    <h4 class="text-2xl font-semibold text-secondary mb-3">Seminario: Derechos Humanos y Litigio Estratégico</h4>
+                    <p class="text-lg text-gray-700 mb-2"><span class="font-bold">Fecha:</span> 10 de Septiembre, 2025</p>
+                    <p class="text-lg text-gray-700 mb-2"><span class="font-bold">Lugar:</span> Auditorio Universitario, Guadalajara</p>
+                    <p class="text-base text-gray-600">Análisis de casos y estrategias para la defensa de los derechos humanos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Espacio para Registros, Quejas, Opiniones -->
+    <section id="contacto" class="container mx-auto px-6 py-20">
+        <h3 class="text-5xl font-bold text-primary text-center mb-12">Contáctanos</h3>
+        <div class="bg-white p-10 rounded-xl shadow-2xl max-w-3xl mx-auto border border-gray-200">
+            <p class="text-xl text-gray-700 text-center mb-8">
+                Utiliza el siguiente formulario para enviarnos tus registros, quejas o opiniones. Tu retroalimentación es importante para nosotros.
+            </p>
+            <form class="space-y-8">
+                <div>
+                    <label for="tipo" class="block text-xl font-medium text-gray-700 mb-3">Selecciona el tipo de mensaje:</label>
+                    <select id="tipo" name="tipo" class="mt-1 block w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-secondary focus:border-secondary text-lg">
+                        <option value="registro">Registro</option>
+                        <option value="queja">Queja</option>
+                        <option value="opinion">Opinión</option>
+                        <option value="consulta">Consulta General</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="nombre" class="block text-xl font-medium text-gray-700 mb-3">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" class="mt-1 block w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-secondary focus:border-secondary text-lg" placeholder="Tu nombre" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-xl font-medium text-gray-700 mb-3">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-secondary focus:border-secondary text-lg" placeholder="tu.correo@ejemplo.com" required>
+                </div>
+                <div>
+                    <label for="mensaje" class="block text-xl font-medium text-gray-700 mb-3">Tu Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="7" class="mt-1 block w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-secondary focus:border-secondary text-lg" placeholder="Escribe aquí tu mensaje detallado..." required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-10">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-6 md:mb-0 text-lg">
+                <p>&copy; 2025 Alianza de Federaciones, Asociaciones, Colegios Organismos y Barras de Abogados de México, A.C. Todos los derechos reservados.</p>
+                <p>Contacto: <a href="mailto:info@alianzaabogados.mx" class="hover:text-accent transition duration-300 ease-in-out">info@alianzaabogados.mx</a> | Tel: <a href="tel:+525512345678" class="hover:text-accent transition duration-300 ease-in-out">+52 55 1234 5678</a></p>
+            </div>
+            <!-- Botones de Redes Sociales -->
+            <div class="flex space-x-7 text-4xl">
+                <a href="#" class="social-icon" aria-label="Facebook">
+                    <!-- Icono de Facebook (SVG simple) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.588-1.333h2.412v-3h-3.473c-4.045 0-5.527 1.165-5.527 4.667v1.333z"/></svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Twitter">
+                    <!-- Icono de Twitter (SVG simple) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.594 0-6.495 2.902-6.495 6.495 0 .509.058 1.006.173 1.49-5.41-.272-10.213-2.868-13.424-6.815-.561.961-.881 2.07-.881 3.291 0 2.254 1.141 4.249 2.873 5.421-.84-.025-1.62-.257-2.3-.646-.004.027-.004.053-.004.081 0 3.155 2.247 5.787 5.224 6.39-.547.148-1.12.228-1.702.228-.418 0-.823-.041-1.22-.116.834 2.592 3.245 4.474 6.11 4.526-2.225 1.747-5.028 2.791-8.09 2.791-1.045 0-2.078-.061-3.097-.179 2.867 1.804 6.298 2.854 9.957 2.854 11.954 0 18.46-9.914 18.46-18.46 0-.281-.008-.562-.023-.842.816-.588 1.527-1.321 2.091-2.168z"/></svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="LinkedIn">
+                    <!-- Icono de LinkedIn (SVG simple) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="https://wa.me/525512345678" class="social-icon" aria-label="WhatsApp" target="_blank">
+                    <!-- Icono de WhatsApp (SVG simple) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.61-3.808-1.61-5.93 0-6.627 5.373-12 12-12s12 5.373 12 12-5.373 12-12 12c-1.937 0-3.83-.564-5.42-1.617l-6.182 1.618zm6.557-3.618l-.48 1.764 1.815-.491c1.476.844 3.16 1.3 4.888 1.398 5.254 0 9.517-4.263 9.517-9.517s-4.263-9.517-9.517-9.517-9.517 4.263-9.517 9.517c0 1.58.41 3.124 1.196 4.496l1.764.48zM12 5.5c2.761 0 5 2.239 5 5s-2.239 5-5 5-5-2.239-5-5 2.239-5 5-5zm-1.5 7.5h3v-1.5h-3v1.5zm0-3h3v-1.5h-3v1.5z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
